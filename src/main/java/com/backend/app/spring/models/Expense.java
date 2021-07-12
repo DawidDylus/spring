@@ -1,4 +1,4 @@
-package models;
+package com.backend.app.spring.models;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
