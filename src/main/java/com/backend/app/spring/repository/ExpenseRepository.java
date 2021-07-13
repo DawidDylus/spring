@@ -8,7 +8,7 @@ import java.util.Optional;
 
 public interface ExpenseRepository extends MongoRepository<Expense, String> {
 
-    @Query("{'name': ?0)}")
+    @Query("{'name': ?0}")
     Optional<Expense> findByName(String name);
 }
 

@@ -2,7 +2,6 @@ package com.backend.app.spring.controllers;
 
 import com.backend.app.spring.models.Expense;
 import com.backend.app.spring.services.ExpenseService;
-import org.springframework.data.mongodb.core.aggregation.ArithmeticOperators;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -26,7 +25,7 @@ public class ExpenseController {
     }
 
     @PutMapping
-    public ResponseEntity<Expense> updateExpense(Expense expense){
+    public ResponseEntity<Expense> updateExpense(@RequestBody Expense expense){
         return ResponseEntity.ok(expenseService.updateExpense(expense));
     }
 

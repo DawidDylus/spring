@@ -39,7 +39,7 @@ public class ExpenseService {
 
     public Expense getExpenseByName(String name){
        return expenseRepository.findByName(name)
-        .orElseThrow(() -> new RuntimeException(
+               .orElseThrow(() -> new RuntimeException(
                 String.format("Cannot Find Expense by Name %s", name)));
     }
 
