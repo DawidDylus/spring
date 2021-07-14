@@ -19,7 +19,7 @@ public class Expense {
     @Field(name = "amount")
     private BigDecimal expenseAmount;
 
-    public Expense(String id, String expenseName, ExpenseCategory expenseCategory, BigDecimal expenseAmount) {
+    public Expense() {
         this.id = id;
         this.expenseName = expenseName;
         this.expenseCategory = expenseCategory;
